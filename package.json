@@ -1,0 +1,15 @@
+{
+  "name": "font-preview",
+  "version": "1.0.0",
+  "main": "generate-fonts-html.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "font-list": "^2.0.0"
+  }
+}

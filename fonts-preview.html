@@ -1,0 +1,1412 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>System Font Preview</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    table { border-collapse: collapse; width: 100%; }
+    td, th { border: 1px solid #ccc; padding: 8px; }
+    .sample { font-size: 36px; }
+    .controls { margin-bottom: 1em; }
+    input[type=range] { width: 200px; }
+  </style>
+</head>
+<body>
+  <h1>System Font Preview</h1>
+  <div class="controls">
+    Font size: <input id="sizeSlider" type="range" min="12" max="120" value="36">
+    <span id="sizeValue">36px</span>
+  </div>
+  <table>
+    <tr><th>Font Family</th><th>Sample</th></tr>
+
+    <tr>
+      <td>等线</td>
+      <td class="sample" style="font-family: '等线'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>等线 Light</td>
+      <td class="sample" style="font-family: '等线 Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>方正舒体</td>
+      <td class="sample" style="font-family: '方正舒体'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>方正姚体</td>
+      <td class="sample" style="font-family: '方正姚体'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>仿宋</td>
+      <td class="sample" style="font-family: '仿宋'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>汉仪曹隶繁</td>
+      <td class="sample" style="font-family: '汉仪曹隶繁'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>汉仪褚楷繁</td>
+      <td class="sample" style="font-family: '汉仪褚楷繁'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>汉仪衡方碑繁</td>
+      <td class="sample" style="font-family: '汉仪衡方碑繁'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>汉仪柳楷繁</td>
+      <td class="sample" style="font-family: '汉仪柳楷繁'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>汉仪陆行繁</td>
+      <td class="sample" style="font-family: '汉仪陆行繁'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>汉仪欧行繁</td>
+      <td class="sample" style="font-family: '汉仪欧行繁'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>汉仪唐隶繁</td>
+      <td class="sample" style="font-family: '汉仪唐隶繁'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>汉仪王行繁</td>
+      <td class="sample" style="font-family: '汉仪王行繁'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>汉仪赵楷繁</td>
+      <td class="sample" style="font-family: '汉仪赵楷繁'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>汉仪智草繁</td>
+      <td class="sample" style="font-family: '汉仪智草繁'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>汉仪智楷繁</td>
+      <td class="sample" style="font-family: '汉仪智楷繁'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>黑体</td>
+      <td class="sample" style="font-family: '黑体'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>华文彩云</td>
+      <td class="sample" style="font-family: '华文彩云'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>华文仿宋</td>
+      <td class="sample" style="font-family: '华文仿宋'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>华文琥珀</td>
+      <td class="sample" style="font-family: '华文琥珀'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>华文楷体</td>
+      <td class="sample" style="font-family: '华文楷体'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>华文隶书</td>
+      <td class="sample" style="font-family: '华文隶书'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>华文宋体</td>
+      <td class="sample" style="font-family: '华文宋体'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>华文细黑</td>
+      <td class="sample" style="font-family: '华文细黑'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>华文新魏</td>
+      <td class="sample" style="font-family: '华文新魏'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>华文行楷</td>
+      <td class="sample" style="font-family: '华文行楷'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>华文中宋</td>
+      <td class="sample" style="font-family: '华文中宋'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>楷体</td>
+      <td class="sample" style="font-family: '楷体'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>隶书</td>
+      <td class="sample" style="font-family: '隶书'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>宋体</td>
+      <td class="sample" style="font-family: '宋体'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>微软雅黑</td>
+      <td class="sample" style="font-family: '微软雅黑'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>微软雅黑 Light</td>
+      <td class="sample" style="font-family: '微软雅黑 Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>微軟正黑體</td>
+      <td class="sample" style="font-family: '微軟正黑體'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>微軟正黑體 Light</td>
+      <td class="sample" style="font-family: '微軟正黑體 Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>細明體_HKSCS-ExtB</td>
+      <td class="sample" style="font-family: '細明體_HKSCS-ExtB'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>細明體-ExtB</td>
+      <td class="sample" style="font-family: '細明體-ExtB'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>新宋体</td>
+      <td class="sample" style="font-family: '新宋体'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>新細明體-ExtB</td>
+      <td class="sample" style="font-family: '新細明體-ExtB'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>幼圆</td>
+      <td class="sample" style="font-family: '幼圆'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Agency FB</td>
+      <td class="sample" style="font-family: 'Agency FB'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Algerian</td>
+      <td class="sample" style="font-family: 'Algerian'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Arial</td>
+      <td class="sample" style="font-family: 'Arial'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Arial Black</td>
+      <td class="sample" style="font-family: 'Arial Black'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Arial Narrow</td>
+      <td class="sample" style="font-family: 'Arial Narrow'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Arial Rounded MT Bold</td>
+      <td class="sample" style="font-family: 'Arial Rounded MT Bold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Arial Unicode MS</td>
+      <td class="sample" style="font-family: 'Arial Unicode MS'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bahnschrift</td>
+      <td class="sample" style="font-family: 'Bahnschrift'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bahnschrift Condensed</td>
+      <td class="sample" style="font-family: 'Bahnschrift Condensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bahnschrift Light</td>
+      <td class="sample" style="font-family: 'Bahnschrift Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bahnschrift Light Condensed</td>
+      <td class="sample" style="font-family: 'Bahnschrift Light Condensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bahnschrift Light SemiCondensed</td>
+      <td class="sample" style="font-family: 'Bahnschrift Light SemiCondensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bahnschrift SemiBold</td>
+      <td class="sample" style="font-family: 'Bahnschrift SemiBold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bahnschrift SemiBold Condensed</td>
+      <td class="sample" style="font-family: 'Bahnschrift SemiBold Condensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bahnschrift SemiBold SemiConden</td>
+      <td class="sample" style="font-family: 'Bahnschrift SemiBold SemiConden'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bahnschrift SemiCondensed</td>
+      <td class="sample" style="font-family: 'Bahnschrift SemiCondensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bahnschrift SemiLight</td>
+      <td class="sample" style="font-family: 'Bahnschrift SemiLight'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bahnschrift SemiLight Condensed</td>
+      <td class="sample" style="font-family: 'Bahnschrift SemiLight Condensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bahnschrift SemiLight SemiConde</td>
+      <td class="sample" style="font-family: 'Bahnschrift SemiLight SemiConde'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Baskerville Old Face</td>
+      <td class="sample" style="font-family: 'Baskerville Old Face'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bauhaus 93</td>
+      <td class="sample" style="font-family: 'Bauhaus 93'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bell MT</td>
+      <td class="sample" style="font-family: 'Bell MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Berlin Sans FB</td>
+      <td class="sample" style="font-family: 'Berlin Sans FB'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Berlin Sans FB Demi</td>
+      <td class="sample" style="font-family: 'Berlin Sans FB Demi'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bernard MT Condensed</td>
+      <td class="sample" style="font-family: 'Bernard MT Condensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Blackadder ITC</td>
+      <td class="sample" style="font-family: 'Blackadder ITC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bodoni MT</td>
+      <td class="sample" style="font-family: 'Bodoni MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bodoni MT Black</td>
+      <td class="sample" style="font-family: 'Bodoni MT Black'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bodoni MT Condensed</td>
+      <td class="sample" style="font-family: 'Bodoni MT Condensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bodoni MT Poster Compressed</td>
+      <td class="sample" style="font-family: 'Bodoni MT Poster Compressed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Book Antiqua</td>
+      <td class="sample" style="font-family: 'Book Antiqua'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bookman Old Style</td>
+      <td class="sample" style="font-family: 'Bookman Old Style'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bookshelf Symbol 7</td>
+      <td class="sample" style="font-family: 'Bookshelf Symbol 7'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Bradley Hand ITC</td>
+      <td class="sample" style="font-family: 'Bradley Hand ITC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Britannic Bold</td>
+      <td class="sample" style="font-family: 'Britannic Bold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Broadway</td>
+      <td class="sample" style="font-family: 'Broadway'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Brush Script MT</td>
+      <td class="sample" style="font-family: 'Brush Script MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Calibri</td>
+      <td class="sample" style="font-family: 'Calibri'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Calibri Light</td>
+      <td class="sample" style="font-family: 'Calibri Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Californian FB</td>
+      <td class="sample" style="font-family: 'Californian FB'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Calisto MT</td>
+      <td class="sample" style="font-family: 'Calisto MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cambria</td>
+      <td class="sample" style="font-family: 'Cambria'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cambria Math</td>
+      <td class="sample" style="font-family: 'Cambria Math'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Candara</td>
+      <td class="sample" style="font-family: 'Candara'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Candara Light</td>
+      <td class="sample" style="font-family: 'Candara Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cascadia Code</td>
+      <td class="sample" style="font-family: 'Cascadia Code'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cascadia Code ExtraLight</td>
+      <td class="sample" style="font-family: 'Cascadia Code ExtraLight'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cascadia Code Light</td>
+      <td class="sample" style="font-family: 'Cascadia Code Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cascadia Code SemiBold</td>
+      <td class="sample" style="font-family: 'Cascadia Code SemiBold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cascadia Code SemiLight</td>
+      <td class="sample" style="font-family: 'Cascadia Code SemiLight'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cascadia Mono</td>
+      <td class="sample" style="font-family: 'Cascadia Mono'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cascadia Mono ExtraLight</td>
+      <td class="sample" style="font-family: 'Cascadia Mono ExtraLight'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cascadia Mono Light</td>
+      <td class="sample" style="font-family: 'Cascadia Mono Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cascadia Mono SemiBold</td>
+      <td class="sample" style="font-family: 'Cascadia Mono SemiBold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cascadia Mono SemiLight</td>
+      <td class="sample" style="font-family: 'Cascadia Mono SemiLight'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Castellar</td>
+      <td class="sample" style="font-family: 'Castellar'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Centaur</td>
+      <td class="sample" style="font-family: 'Centaur'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Century</td>
+      <td class="sample" style="font-family: 'Century'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Century Gothic</td>
+      <td class="sample" style="font-family: 'Century Gothic'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Century Schoolbook</td>
+      <td class="sample" style="font-family: 'Century Schoolbook'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Chiller</td>
+      <td class="sample" style="font-family: 'Chiller'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Colonna MT</td>
+      <td class="sample" style="font-family: 'Colonna MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Comic Sans MS</td>
+      <td class="sample" style="font-family: 'Comic Sans MS'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Consolas</td>
+      <td class="sample" style="font-family: 'Consolas'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Constantia</td>
+      <td class="sample" style="font-family: 'Constantia'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Cooper Black</td>
+      <td class="sample" style="font-family: 'Cooper Black'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Copperplate Gothic Bold</td>
+      <td class="sample" style="font-family: 'Copperplate Gothic Bold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Copperplate Gothic Light</td>
+      <td class="sample" style="font-family: 'Copperplate Gothic Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Corbel</td>
+      <td class="sample" style="font-family: 'Corbel'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Corbel Light</td>
+      <td class="sample" style="font-family: 'Corbel Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Courier New</td>
+      <td class="sample" style="font-family: 'Courier New'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Curlz MT</td>
+      <td class="sample" style="font-family: 'Curlz MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Dubai</td>
+      <td class="sample" style="font-family: 'Dubai'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Dubai Light</td>
+      <td class="sample" style="font-family: 'Dubai Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Dubai Medium</td>
+      <td class="sample" style="font-family: 'Dubai Medium'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Ebrima</td>
+      <td class="sample" style="font-family: 'Ebrima'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Edwardian Script ITC</td>
+      <td class="sample" style="font-family: 'Edwardian Script ITC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Elephant</td>
+      <td class="sample" style="font-family: 'Elephant'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Engravers MT</td>
+      <td class="sample" style="font-family: 'Engravers MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Eras Bold ITC</td>
+      <td class="sample" style="font-family: 'Eras Bold ITC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Eras Demi ITC</td>
+      <td class="sample" style="font-family: 'Eras Demi ITC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Eras Light ITC</td>
+      <td class="sample" style="font-family: 'Eras Light ITC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Eras Medium ITC</td>
+      <td class="sample" style="font-family: 'Eras Medium ITC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Felix Titling</td>
+      <td class="sample" style="font-family: 'Felix Titling'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Footlight MT Light</td>
+      <td class="sample" style="font-family: 'Footlight MT Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Forte</td>
+      <td class="sample" style="font-family: 'Forte'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Franklin Gothic Book</td>
+      <td class="sample" style="font-family: 'Franklin Gothic Book'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Franklin Gothic Demi</td>
+      <td class="sample" style="font-family: 'Franklin Gothic Demi'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Franklin Gothic Demi Cond</td>
+      <td class="sample" style="font-family: 'Franklin Gothic Demi Cond'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Franklin Gothic Heavy</td>
+      <td class="sample" style="font-family: 'Franklin Gothic Heavy'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Franklin Gothic Medium</td>
+      <td class="sample" style="font-family: 'Franklin Gothic Medium'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Franklin Gothic Medium Cond</td>
+      <td class="sample" style="font-family: 'Franklin Gothic Medium Cond'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Freestyle Script</td>
+      <td class="sample" style="font-family: 'Freestyle Script'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>French Script MT</td>
+      <td class="sample" style="font-family: 'French Script MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Gabriola</td>
+      <td class="sample" style="font-family: 'Gabriola'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Gadugi</td>
+      <td class="sample" style="font-family: 'Gadugi'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Garamond</td>
+      <td class="sample" style="font-family: 'Garamond'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Georgia</td>
+      <td class="sample" style="font-family: 'Georgia'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Gigi</td>
+      <td class="sample" style="font-family: 'Gigi'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Gill Sans MT</td>
+      <td class="sample" style="font-family: 'Gill Sans MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Gill Sans MT Condensed</td>
+      <td class="sample" style="font-family: 'Gill Sans MT Condensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Gill Sans MT Ext Condensed Bold</td>
+      <td class="sample" style="font-family: 'Gill Sans MT Ext Condensed Bold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Gill Sans Ultra Bold</td>
+      <td class="sample" style="font-family: 'Gill Sans Ultra Bold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Gill Sans Ultra Bold Condensed</td>
+      <td class="sample" style="font-family: 'Gill Sans Ultra Bold Condensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Gloucester MT Extra Condensed</td>
+      <td class="sample" style="font-family: 'Gloucester MT Extra Condensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Goudy Old Style</td>
+      <td class="sample" style="font-family: 'Goudy Old Style'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Goudy Stout</td>
+      <td class="sample" style="font-family: 'Goudy Stout'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Haettenschweiler</td>
+      <td class="sample" style="font-family: 'Haettenschweiler'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Harlow Solid Italic</td>
+      <td class="sample" style="font-family: 'Harlow Solid Italic'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Harrington</td>
+      <td class="sample" style="font-family: 'Harrington'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>High Tower Text</td>
+      <td class="sample" style="font-family: 'High Tower Text'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Impact</td>
+      <td class="sample" style="font-family: 'Impact'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Imprint MT Shadow</td>
+      <td class="sample" style="font-family: 'Imprint MT Shadow'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Informal Roman</td>
+      <td class="sample" style="font-family: 'Informal Roman'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Ink Free</td>
+      <td class="sample" style="font-family: 'Ink Free'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Javanese Text</td>
+      <td class="sample" style="font-family: 'Javanese Text'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Jokerman</td>
+      <td class="sample" style="font-family: 'Jokerman'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Juice ITC</td>
+      <td class="sample" style="font-family: 'Juice ITC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Kristen ITC</td>
+      <td class="sample" style="font-family: 'Kristen ITC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Kunstler Script</td>
+      <td class="sample" style="font-family: 'Kunstler Script'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Leelawadee</td>
+      <td class="sample" style="font-family: 'Leelawadee'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Leelawadee UI</td>
+      <td class="sample" style="font-family: 'Leelawadee UI'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Leelawadee UI Semilight</td>
+      <td class="sample" style="font-family: 'Leelawadee UI Semilight'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Lucida Bright</td>
+      <td class="sample" style="font-family: 'Lucida Bright'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Lucida Calligraphy</td>
+      <td class="sample" style="font-family: 'Lucida Calligraphy'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Lucida Console</td>
+      <td class="sample" style="font-family: 'Lucida Console'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Lucida Fax</td>
+      <td class="sample" style="font-family: 'Lucida Fax'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Lucida Handwriting</td>
+      <td class="sample" style="font-family: 'Lucida Handwriting'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Lucida Sans</td>
+      <td class="sample" style="font-family: 'Lucida Sans'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Lucida Sans Typewriter</td>
+      <td class="sample" style="font-family: 'Lucida Sans Typewriter'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Lucida Sans Unicode</td>
+      <td class="sample" style="font-family: 'Lucida Sans Unicode'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Magneto</td>
+      <td class="sample" style="font-family: 'Magneto'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Maiandra GD</td>
+      <td class="sample" style="font-family: 'Maiandra GD'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Malgun Gothic</td>
+      <td class="sample" style="font-family: 'Malgun Gothic'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Malgun Gothic Semilight</td>
+      <td class="sample" style="font-family: 'Malgun Gothic Semilight'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Marlett</td>
+      <td class="sample" style="font-family: 'Marlett'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Matura MT Script Capitals</td>
+      <td class="sample" style="font-family: 'Matura MT Script Capitals'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Microsoft Himalaya</td>
+      <td class="sample" style="font-family: 'Microsoft Himalaya'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Microsoft JhengHei UI</td>
+      <td class="sample" style="font-family: 'Microsoft JhengHei UI'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Microsoft JhengHei UI Light</td>
+      <td class="sample" style="font-family: 'Microsoft JhengHei UI Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Microsoft New Tai Lue</td>
+      <td class="sample" style="font-family: 'Microsoft New Tai Lue'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Microsoft PhagsPa</td>
+      <td class="sample" style="font-family: 'Microsoft PhagsPa'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Microsoft Sans Serif</td>
+      <td class="sample" style="font-family: 'Microsoft Sans Serif'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Microsoft Tai Le</td>
+      <td class="sample" style="font-family: 'Microsoft Tai Le'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Microsoft Uighur</td>
+      <td class="sample" style="font-family: 'Microsoft Uighur'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Microsoft YaHei UI</td>
+      <td class="sample" style="font-family: 'Microsoft YaHei UI'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Microsoft YaHei UI Light</td>
+      <td class="sample" style="font-family: 'Microsoft YaHei UI Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Microsoft Yi Baiti</td>
+      <td class="sample" style="font-family: 'Microsoft Yi Baiti'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Mistral</td>
+      <td class="sample" style="font-family: 'Mistral'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Modern No. 20</td>
+      <td class="sample" style="font-family: 'Modern No. 20'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Mongolian Baiti</td>
+      <td class="sample" style="font-family: 'Mongolian Baiti'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Monotype Corsiva</td>
+      <td class="sample" style="font-family: 'Monotype Corsiva'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>MS Gothic</td>
+      <td class="sample" style="font-family: 'MS Gothic'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>MS Outlook</td>
+      <td class="sample" style="font-family: 'MS Outlook'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>MS PGothic</td>
+      <td class="sample" style="font-family: 'MS PGothic'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>MS Reference Sans Serif</td>
+      <td class="sample" style="font-family: 'MS Reference Sans Serif'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>MS Reference Specialty</td>
+      <td class="sample" style="font-family: 'MS Reference Specialty'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>MS UI Gothic</td>
+      <td class="sample" style="font-family: 'MS UI Gothic'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>MT Extra</td>
+      <td class="sample" style="font-family: 'MT Extra'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>MV Boli</td>
+      <td class="sample" style="font-family: 'MV Boli'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Myanmar Text</td>
+      <td class="sample" style="font-family: 'Myanmar Text'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Niagara Engraved</td>
+      <td class="sample" style="font-family: 'Niagara Engraved'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Niagara Solid</td>
+      <td class="sample" style="font-family: 'Niagara Solid'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Nirmala UI</td>
+      <td class="sample" style="font-family: 'Nirmala UI'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Nirmala UI Semilight</td>
+      <td class="sample" style="font-family: 'Nirmala UI Semilight'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Noto Sans SC</td>
+      <td class="sample" style="font-family: 'Noto Sans SC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Noto Sans SC Black</td>
+      <td class="sample" style="font-family: 'Noto Sans SC Black'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Noto Sans SC DemiLight</td>
+      <td class="sample" style="font-family: 'Noto Sans SC DemiLight'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Noto Sans SC Light</td>
+      <td class="sample" style="font-family: 'Noto Sans SC Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Noto Sans SC Medium</td>
+      <td class="sample" style="font-family: 'Noto Sans SC Medium'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Noto Sans SC Thin</td>
+      <td class="sample" style="font-family: 'Noto Sans SC Thin'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>OCR A Extended</td>
+      <td class="sample" style="font-family: 'OCR A Extended'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Old English Text MT</td>
+      <td class="sample" style="font-family: 'Old English Text MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Onyx</td>
+      <td class="sample" style="font-family: 'Onyx'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Palace Script MT</td>
+      <td class="sample" style="font-family: 'Palace Script MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Palatino Linotype</td>
+      <td class="sample" style="font-family: 'Palatino Linotype'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Papyrus</td>
+      <td class="sample" style="font-family: 'Papyrus'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Parchment</td>
+      <td class="sample" style="font-family: 'Parchment'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Perpetua</td>
+      <td class="sample" style="font-family: 'Perpetua'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Perpetua Titling MT</td>
+      <td class="sample" style="font-family: 'Perpetua Titling MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Playbill</td>
+      <td class="sample" style="font-family: 'Playbill'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Poor Richard</td>
+      <td class="sample" style="font-family: 'Poor Richard'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Pristina</td>
+      <td class="sample" style="font-family: 'Pristina'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Rage Italic</td>
+      <td class="sample" style="font-family: 'Rage Italic'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Ravie</td>
+      <td class="sample" style="font-family: 'Ravie'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Rockwell</td>
+      <td class="sample" style="font-family: 'Rockwell'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Rockwell Condensed</td>
+      <td class="sample" style="font-family: 'Rockwell Condensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Rockwell Extra Bold</td>
+      <td class="sample" style="font-family: 'Rockwell Extra Bold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Script MT Bold</td>
+      <td class="sample" style="font-family: 'Script MT Bold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Segoe MDL2 Assets</td>
+      <td class="sample" style="font-family: 'Segoe MDL2 Assets'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Segoe Print</td>
+      <td class="sample" style="font-family: 'Segoe Print'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Segoe Script</td>
+      <td class="sample" style="font-family: 'Segoe Script'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Segoe UI</td>
+      <td class="sample" style="font-family: 'Segoe UI'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Segoe UI Black</td>
+      <td class="sample" style="font-family: 'Segoe UI Black'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Segoe UI Emoji</td>
+      <td class="sample" style="font-family: 'Segoe UI Emoji'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Segoe UI Historic</td>
+      <td class="sample" style="font-family: 'Segoe UI Historic'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Segoe UI Light</td>
+      <td class="sample" style="font-family: 'Segoe UI Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Segoe UI Semibold</td>
+      <td class="sample" style="font-family: 'Segoe UI Semibold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Segoe UI Semilight</td>
+      <td class="sample" style="font-family: 'Segoe UI Semilight'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Segoe UI Symbol</td>
+      <td class="sample" style="font-family: 'Segoe UI Symbol'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Showcard Gothic</td>
+      <td class="sample" style="font-family: 'Showcard Gothic'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>SimSun-ExtB</td>
+      <td class="sample" style="font-family: 'SimSun-ExtB'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>SimSun-ExtG</td>
+      <td class="sample" style="font-family: 'SimSun-ExtG'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Sitka Banner</td>
+      <td class="sample" style="font-family: 'Sitka Banner'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Sitka Display</td>
+      <td class="sample" style="font-family: 'Sitka Display'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Sitka Heading</td>
+      <td class="sample" style="font-family: 'Sitka Heading'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Sitka Small</td>
+      <td class="sample" style="font-family: 'Sitka Small'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Sitka Subheading</td>
+      <td class="sample" style="font-family: 'Sitka Subheading'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Sitka Text</td>
+      <td class="sample" style="font-family: 'Sitka Text'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Snap ITC</td>
+      <td class="sample" style="font-family: 'Snap ITC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Stencil</td>
+      <td class="sample" style="font-family: 'Stencil'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Sylfaen</td>
+      <td class="sample" style="font-family: 'Sylfaen'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Symbol</td>
+      <td class="sample" style="font-family: 'Symbol'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Tahoma</td>
+      <td class="sample" style="font-family: 'Tahoma'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Tempus Sans ITC</td>
+      <td class="sample" style="font-family: 'Tempus Sans ITC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Times New Roman</td>
+      <td class="sample" style="font-family: 'Times New Roman'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Trebuchet MS</td>
+      <td class="sample" style="font-family: 'Trebuchet MS'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Tw Cen MT</td>
+      <td class="sample" style="font-family: 'Tw Cen MT'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Tw Cen MT Condensed</td>
+      <td class="sample" style="font-family: 'Tw Cen MT Condensed'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Tw Cen MT Condensed Extra Bold</td>
+      <td class="sample" style="font-family: 'Tw Cen MT Condensed Extra Bold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Verdana</td>
+      <td class="sample" style="font-family: 'Verdana'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Viner Hand ITC</td>
+      <td class="sample" style="font-family: 'Viner Hand ITC'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Vivaldi</td>
+      <td class="sample" style="font-family: 'Vivaldi'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Vladimir Script</td>
+      <td class="sample" style="font-family: 'Vladimir Script'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Webdings</td>
+      <td class="sample" style="font-family: 'Webdings'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Wide Latin</td>
+      <td class="sample" style="font-family: 'Wide Latin'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Wingdings</td>
+      <td class="sample" style="font-family: 'Wingdings'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Wingdings 2</td>
+      <td class="sample" style="font-family: 'Wingdings 2'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Wingdings 3</td>
+      <td class="sample" style="font-family: 'Wingdings 3'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Yu Gothic</td>
+      <td class="sample" style="font-family: 'Yu Gothic'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Yu Gothic Light</td>
+      <td class="sample" style="font-family: 'Yu Gothic Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Yu Gothic Medium</td>
+      <td class="sample" style="font-family: 'Yu Gothic Medium'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Yu Gothic UI</td>
+      <td class="sample" style="font-family: 'Yu Gothic UI'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Yu Gothic UI Light</td>
+      <td class="sample" style="font-family: 'Yu Gothic UI Light'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Yu Gothic UI Semibold</td>
+      <td class="sample" style="font-family: 'Yu Gothic UI Semibold'">11:57:69</td>
+    </tr>
+  
+    <tr>
+      <td>Yu Gothic UI Semilight</td>
+      <td class="sample" style="font-family: 'Yu Gothic UI Semilight'">11:57:69</td>
+    </tr>
+  
+  </table>
+  <script>
+    const slider = document.getElementById("sizeSlider");
+    const sizeValue = document.getElementById("sizeValue");
+    slider.addEventListener("input", () => {
+      sizeValue.textContent = slider.value + "px";
+      document.querySelectorAll(".sample").forEach(el => {
+        el.style.fontSize = slider.value + "px";
+      });
+    });
+  </script>
+</body>
+</html>
